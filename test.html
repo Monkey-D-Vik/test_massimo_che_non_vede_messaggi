@@ -97,12 +97,12 @@
       const maxX = container.offsetWidth - noButton.offsetWidth;
       const maxY = container.offsetHeight - noButton.offsetHeight;
 
-      const newX = Math.floor(Math.random() * (maxX * 30));  // Moltiplichiamo per 2 per avere una maggiore distanza orizzontale
-      const newY = Math.floor(Math.random() * (maxY * 30));  // Moltiplichiamo per 2 per avere una maggiore distanza verticale
+      const newX = Math.floor(Math.random() * (maxX * 30));  
+      const newY = Math.floor(Math.random() * (maxY * 30));  
 
-      noButton.style.position = 'absolute'; // Posizione assoluta per poterlo spostare
-      noButton.style.left = `${Math.min(newX, maxX)}px`;  // Limitiamo il movimento alla larghezza del contenitore
-      noButton.style.top = `${Math.min(newY, maxY)}px`;   // Limitiamo il movimento all'altezza del contenitore
+      noButton.style.position = 'absolute'; 
+      noButton.style.left = `${Math.min(newX, maxX)}px`;  
+      noButton.style.top = `${Math.min(newY, maxY)}px`;   
     }
 
     noButton.addEventListener("mouseover", moveButton);
